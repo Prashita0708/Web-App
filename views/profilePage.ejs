@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-3">Hi! We are happy that you are here!</h1>
+    <p class="lead">Onboard with a beautiful Profile ♥</p>
+    <hr>
+      <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
+      <h3>User Profile</h3>
+      <p><%=user.name%></p>
+      <p><%=user.bio%></p>
+    <hr>
+
+    <a class="btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+    <a class="btn btn-dark btn-lg" href="/edit" role="button">Edit your Profile</a>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
